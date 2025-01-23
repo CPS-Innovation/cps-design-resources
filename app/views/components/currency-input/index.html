@@ -1,0 +1,37 @@
+{% extends "../../layouts/guidance.html" %}
+
+{% set sectionId = "components" %}
+{% set pageId = "currency-input" %}
+{% set pageTitle = "Currency input" %}
+
+{% block subNav %}
+{% include "../navigation.html" %}
+{% endblock %}
+
+{% block pageContent %}
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-4"><span class="govuk-caption-xl">Components</span> {{ pageTitle }}</h1>
+
+  {{ govukTag({
+    classes: 'govuk-!-margin-bottom-8',
+    text: 'experimental'
+  }) }}
+
+  {% set html %}
+    <h3 class="govuk-notification-banner__heading">
+      The GOV.UK Design System has a similar component
+    </h3>
+    <p class="govuk-body">The <a href="https://design-system.service.gov.uk/components/text-input/">Text input component</a> in the GOV.UK Design System supports <a href="https://design-system.service.gov.uk/components/text-input/#prefixes-and-suffixes">prefixes and suffixes</a>, including currency symbols.</p>
+    <p class="govuk-body">You should use the GOV.UK version if you can.</p>
+  {% endset %}
+
+
+  {{ govukNotificationBanner({
+    html: html
+  }) }}
+
+  <div class="app-prose-scope">
+    {% markdown %}{% include "./README.md" %}{% endmarkdown %}
+  </div>
+
+{% endblock %}
