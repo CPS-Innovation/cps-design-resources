@@ -1,6 +1,6 @@
 # Community
 
-The MOJ Design System is for everyone. It has a strong community behind it. It includes the latest research, design and development to represent and be relevant for its users.
+The CPS Design System is for everyone. It has a strong community behind it. It includes the latest research, design and development to represent and be relevant for its users.
 
 Find out:
 
@@ -26,7 +26,7 @@ Reach out to the community to ask questions, gather examples and learn from othe
 
 ### 2. Contribute back and help others
 
-The MOJ Design System is for everyone. Anyone can contribute evidenced-based changes.
+The CPS Design System is for everyone. Anyone can contribute evidenced-based changes.
 
 Think beyond your service and aim to design components and patterns that are scalable, reusable and can evolve over time.
 
