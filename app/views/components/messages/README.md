@@ -1,26 +1,21 @@
 Use the messages component to display a list of messages in chronological order.
+<div><img src="/public/images/cps/messages.png" alt="image of the action button open showing the options available" style="width:80%;height:auto"></div>
 
-{{ dsExample({
-  name: 'messages',
-  example: 'default',
-  height: 500
-}) }}
+
+## Where is it from
+
+This component is [MOJ messages](https://design-patterns.service.justice.gov.uk/components/messages/)  from MOJ Design Patterns.
+
+
 
 ## When to use this component
 
 Use this component in your service to display a list of messages in chronological order between different people or systems. For example, between case workers and legal professionals.
 
-## How it works
 
-There are 2 ways to use the messages component. You can use HTML or, if you are using [Nunjucks](https://mozilla.github.io/nunjucks/) or the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herokuapp.com/), you can use the Nunjucks macro.
-
-## Research on this component
+## Where it is used
 
 This component has been used in:
 
-- Claim fees for Crown court defence (Legal Aid Agency)
-- Track a query (Ministry of Justice)
+- AI writer
 
-## Contribute to this component
-
-You can contribute to this component via the [design system backlog](https://github.com/ministryofjustice/moj-design-system-backlog/issues/14)
