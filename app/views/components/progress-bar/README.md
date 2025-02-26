@@ -1,29 +1,29 @@
-Use the progress bar component to show users which stage of the journey they're at.
 
-{{ dsExample({
-  name: 'progress-bar',
-  example: 'default',
-  height: 175
-}) }}
+<div style="display:flex">
+<div><img src="/public/images/cps/progress-bar-1.jpg" alt="image of the progress bar layout" style="width:60%;height:auto"></div>
+<div><img src="/public/images/cps/progress-bar-2.jpg" alt="image of the progress bar layout" style="width:60%;height:auto"></div>
+</div>
 
 ## When to use this component
 
-Progress bars can be used at the entry and exit points of a transaction to illustrate the user's location within a larger service journey.
+Consider using the GOV.UK [Complete multiple tasks](https://design-system.service.gov.uk/patterns/complete-multiple-tasks/) first. If the multiple tasks is not suitable then consider using this pattern, however discuss with the design team and design lead first.
 
-When a user completes a transaction, the done page should include a progress bar. When a user is invited to return to complete another transaction within the service journey, the landing page should also include a progress bar.
+The component is useful when users need the flexibility to complete their tasks in a non-sequential order or switch between different tasks as needed.
 
 ## When not to use this component
 
-Progress bars are not used to show individual steps within a transaction, or used as a navigation within a transaction.
+Progress bars are not used to show individual steps within a transaction, or used as a navigation. It should only be used for non-sequential order transactions. 
 
 ## How it works
 
-There are 2 ways to use the progress bar component. You can use HTML or, if you are using [Nunjucks](https://mozilla.github.io/nunjucks/) or the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herokuapp.com/), you can use the Nunjucks macro.
+The user can navigate through the transaction in any order, moving back and forth between completed sections. A tick will appear in the roundel to indicate completed sections.
 
-## Research on this component
 
-We need more research. If you have used the progress bar component, get in touch to share your research findings.
+## Where is it used
 
-## Contribute to this component
+This component is used in:
+- Case review
 
-You can contribute to this component via the [design system backlog](https://github.com/ministryofjustice/moj-design-system-backlog/)
+## Accessibility criteria
+
+t.b.c

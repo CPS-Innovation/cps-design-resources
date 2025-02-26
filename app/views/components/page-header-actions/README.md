@@ -1,10 +1,10 @@
 Use the page header actions component for certain actions.
 
-{{ dsExample({
-  name: 'page-header-actions',
-  example: 'default',
-  height: 150
-}) }}
+<div><img src="/public/images/cps/page-header-1.png" alt="image of the multiselct being used on housekeeping" style="width:100%;height:auto"></div>
+
+## Where is it from
+
+We use the [MOJ Design System](https://design-patterns.service.justice.gov.uk/components/page-header-actions/) pattern.
 
 ## When to use this component
 
@@ -17,14 +17,11 @@ Use this when:
 
 Don’t place buttons next to the header when they are specific to a component within the page.
 
-## How it works
+## How to use
 
 The component ensures the buttons are aligned right in line with the heading. On small screens the buttons tuck underneath the heading.
 
 ## Research on this component
 
-We need more research. If you have used the page header actions component, get in touch to share your research findings.
-
-## Contribute to this component
-
-You can contribute to this component via the [design system backlog](https://github.com/ministryofjustice/moj-design-system-backlog/issues/42)
+This component is used in:
+- Structured data

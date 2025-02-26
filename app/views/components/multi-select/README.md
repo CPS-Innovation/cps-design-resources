@@ -1,19 +1,34 @@
 Use the multi select component to let users select multiple items in a list.
 
-{{ dsExample({
-  name: 'multi-select',
-  example: 'default',
-  height: 650
-}) }}
 
-## How it works
+<div><img src="/public/images/cps/multi-select-1.png" alt="image of the multiselect from MOJ" style="width:100%;height:auto"></div>
 
-There are 2 ways to use the multi select component. You can use HTML or, if you are using [Nunjucks](https://mozilla.github.io/nunjucks/) or the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herokuapp.com/), you can use the Nunjucks [table macro](https://design-system.service.gov.uk/components/table/).
+<div><img src="/public/images/cps/filter-2.png" alt="image of the multiselct being used on housekeeping" style="width:100%;height:auto"></div>
+
+
+
+
+## Where is it from
+
+We use the [MOJ Design System](https://design-patterns.service.justice.gov.uk/components/multi-select/) pattern.
+
+
+## When to use this component
+
+Use the multi select component to let users select multiple items in a list.
+
+
+
+## When not to use this component
+
+- Do not use this component if the user only needs to select one thing from the list/table
+- Do not swap the checkboxes for radio buttons when the user needs to select one thing. Use the patterns on summary list.
+
 
 ## Research on this component
 
-We need more research. If you have used the multi select component, get in touch to share your research findings.
-
-## Contribute to this component
-
-You can contribute to this component via the [design system backlog](https://github.com/ministryofjustice/moj-design-system-backlog/issues/40)
+This component is used in:
+- Housekeeping
+- Work management
+- Structured date
+- Case review

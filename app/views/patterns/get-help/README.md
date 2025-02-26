@@ -2,6 +2,12 @@ Help users get help from within the digital service.
 
 <img src="/public/images/patterns/get-support-online.png">
 
+
+## Where is it from
+
+This pattern is based on the [MOJ get help](https://design-patterns.service.justice.gov.uk/patterns/get-help/) component.
+
+
 ## When to use this pattern
 
 Use this component at the bottom of every page of your service.
@@ -39,10 +45,7 @@ The form should also send additional data automatically like:
 
 This will let customer support staff triage the issue and respond quickly.
 
-## Research on this pattern
+## Where is it used
 
-We need more research. If you have used the support, get in touch to share your research findings.
-
-## Contribute to this pattern
-
-You can contribute to this pattern via the [design system backlog](https://github.com/ministryofjustice/moj-design-system-backlog/issues/47)
+This component is used in:
+- witness expenses
