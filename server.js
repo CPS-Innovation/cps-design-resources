@@ -54,7 +54,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Find a free port and start the server
 utils.findAvailablePort(app, (port) => {
-  console.log('Listening on port ' + port + ' url: http://localhost:' + port);
+  console.log('Listening on port ' + port + ' url: http://localhost:' + port + env);
   if ((env === 'production' || env === 'staging') || useBrowserSync === 'false') {
     app.listen(port);
   } else {
