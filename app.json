@@ -1,15 +1,15 @@
 {
-  "name": "moj-design-system",
+  "name": "cps-design-system",
   "description": "The CPS Design System is one place for service teams to find styles, components and patterns for designing CPS services.",
   "keywords": [
-    "ministry-of-justice",
+    "cps",
     "design-system",
     "design-patterns",
     "design",
     "patterns"
   ],
-  "website": "https://moj-design-system.herokuapp.com/",
-  "repository": "https://github.com/ministryofjustice/moj-design-system",
+  "website": "",
+  "repository": "",
   "addons": [
 
   ],
@@ -19,7 +19,7 @@
     }
   ],
   "env": {
-    "NODE_ENV": "development",
+    "NODE_ENV": "production",
     "PASSWORD": {
       "required": true
     },
@@ -34,7 +34,7 @@
     }
   },
   "engines": {
-    "node": "10.x",
+    "node": "14.x",
     "npm": "6.x"
   },
   "formation": {
