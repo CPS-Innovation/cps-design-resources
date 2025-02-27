@@ -8,17 +8,11 @@ const express = require('express');
 const dotenv = require('dotenv');
 const nunjucks = require('nunjucks');
 const markdown = require('nunjucks-markdown');
-const sessionInMemory = require('express-session');
+const session = require('express-session');
 const bodyParser = require('body-parser');
 const marked = require('marked');
 const fileHelper = require('./app/utils/file-helper');
 const hljs = require('highlight.js');
-
-let sessionOptions = {
-  secret: 'moj-frontend'
-};
-
-
 
 // Run before other code to make sure variables from .env are available
 dotenv.config();
@@ -36,31 +30,73 @@ const port = process.env.PORT || 3000;
 
 // Configuration
 const env = process.env.NODE_ENV || 'development';
-const useAuth = process.env.USE_AUTH || true;
-const useHttps = process.env.USE_HTTPS || true;
-const username = process.env.USERNAME;
-const password = process.env.PASSWORD;
-const useBrowserSync = process.env.USE_BROWSER_SYNC || true;
-
-// env = env.toLowerCase();
-// useAuth = useAuth.toLowerCase();
-// useHttps = useHttps.toLowerCase();
-// useBrowserSync = useBrowserSync.toLowerCase();
+const useAuth = process.env.USE_AUTH === 'true';
+const useHttps = process.env.USE_HTTPS === 'true';
+const username = process.env.USERNAME || "design  ";
+const password = process.env.PASSWORD || "eagle";
+const useBrowserSync = process.env.USE_BROWSER_SYNC === 'true';
 
 // Application
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// Session Configuration
+app.use(session({
+  secret: process.env.SESSION_SECRET || 'moj-frontend-secret',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: false }  // Set `true` if using HTTPS
+}));
+
+// Authentication Middleware
+function authMiddleware(req, res, next) {
+  if (!useAuth) return next(); // Skip authentication if disabled
+  if (req.session.authenticated) return next(); // Allow access if logged in
+  res.redirect('/login'); // Redirect to login page
+}
+
+// Login Page Route
+app.get('/login', (req, res) => {
+  res.send(`
+    <form method="post" action="/login">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  `);
+});
+
+// Handle Login Submission
+app.post('/login', (req, res) => {
+  if (req.body.username === username && req.body.password === password) {
+    req.session.authenticated = true;
+    return res.redirect('/'); // Redirect to home after login
+  }
+  res.status(401).send("Unauthorized: Invalid credentials");
+});
+
+// Logout Route
+app.get('/logout', (req, res) => {
+  req.session.destroy(() => {
+    res.redirect('/login');
+  });
+});
+
+// Apply Authentication Middleware Globally (Only if Auth is Enabled)
+if (useAuth) {
+  app.use(authMiddleware);
+}
+
 // Find a free port and start the server
 utils.findAvailablePort(app, (port) => {
-  console.log('Listening on port ' + port + ' url: http://localhost:' + port + env);
-  if ((env === 'production' || env === 'staging') || useBrowserSync === 'false') {
+  console.log(`Listening on port ${port} - URL: http://localhost:${port} (${env})`);
+  if ((env === 'production' || env === 'staging') || !useBrowserSync) {
     app.listen(port);
   } else {
     app.listen(port - 50, () => {
       browserSync({
-        proxy: 'localhost:' + (port - 50),
+        proxy: `localhost:${port - 50}`,
         port: port,
         ui: false,
         files: ['public/**/*.*', 'app/views/**/*.*'],
@@ -68,25 +104,19 @@ utils.findAvailablePort(app, (port) => {
         open: false,
         notify: false,
         logLevel: 'error'
-      })
-    })
+      });
+    });
   }
 });
 
-// Force HTTPS on production. Do this before using basicAuth to avoid
-// asking for username/password twice (for `http`, then `https`).
-if ((env === 'production' || env === 'staging') && useHttps === 'true') {
+// Force HTTPS on production
+if ((env === 'production' || env === 'staging') && useHttps) {
   app.use(utils.forceHttps);
-  app.set('trust proxy', 1); // needed for secure cookies on heroku
-}
-
-// Ask for username and password on production
-if ((env === 'production' || env === 'staging') && useAuth === 'true') {
-  app.use(utils.basicAuth(username, password));
+  app.set('trust proxy', 1);
 }
 
 // Search engine indexing
-if ((env === 'production' || env === 'staging') && useAuth === 'false') {
+if ((env === 'production' || env === 'staging') && !useAuth) {
   // Allow search engines to index the site
   app.get('/robots.txt', (req, res) => {
     res.type('text/plain');
@@ -95,7 +125,6 @@ if ((env === 'production' || env === 'staging') && useAuth === 'false') {
 } else {
   // Prevent search indexing
   app.use((req, res, next) => {
-    // Setting headers stops pages being indexed even if indexed pages link to them.
     res.setHeader('X-Robots-Tag', 'noindex');
     next();
   });
@@ -128,16 +157,15 @@ nunjucksEnvironment.addGlobal('getCssCode', fileHelper.getCSSCode);
 nunjucksEnvironment.addGlobal('getJsCode', fileHelper.getJSCode);
 
 nunjucksEnvironment.addFilter('highlight', (code, language = '') => {
-  const highlighted = hljs.highlight(code, { language }).value
-
+  const highlighted = hljs.highlight(code, { language }).value;
   return new nunjucks.runtime.SafeString(highlighted);
-})
+});
 
 // Add filters from MOJ Frontend
 let mojFilters = require('./node_modules/@ministryofjustice/frontend/moj/filters/all')();
 mojFilters = Object.assign(mojFilters);
 Object.keys(mojFilters).forEach(function (filterName) {
-  nunjucksEnvironment.addFilter(filterName, mojFilters[filterName])
+  nunjucksEnvironment.addFilter(filterName, mojFilters[filterName]);
 });
 
 // Set view engine
@@ -145,17 +173,11 @@ app.set('view engine', 'html');
 
 // Middleware to serve static assets
 app.use('/public', express.static(path.join(__dirname, '/public')));
-app.use('/assets', express.static(path.join(__dirname, '/node_modules/govuk-frontend/govuk/assets')))
+app.use('/assets', express.static(path.join(__dirname, '/node_modules/govuk-frontend/govuk/assets')));
 app.use('/assets', express.static(path.join(__dirname, '/node_modules/@ministryofjustice/frontend/moj/assets')));
 
 app.use('/node_modules/govuk-frontend', express.static(path.join(__dirname, '/node_modules/govuk-frontend')));
 app.use('/node_modules/moj-frontend', express.static(path.join(__dirname, '/node_modules/@ministryofjustice/frontend')));
-
-app.use(sessionInMemory(Object.assign(sessionOptions, {
-  name: 'moj-frontend',
-  resave: false,
-  saveUninitialized: false
-})));
 
 // Use routes
 app.use(routes);
@@ -191,6 +213,7 @@ if (!envExists) {
     .pipe(fs.createWriteStream(path.join(__dirname, '/.env')));
 }
 
+// Start server
 const PORT = 3000;
 const HOST = '0.0.0.0'; // Bind to all interfaces
 
@@ -199,5 +222,3 @@ app.listen(PORT, HOST, () => {
 });
 
 module.exports = app;
-
-
