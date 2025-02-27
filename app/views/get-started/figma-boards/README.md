@@ -1,8 +1,9 @@
 These are prototypes and Figma boards we are working on as a team: 
 
-- [Global Navigation (pwd: eagle)](https://witness-expenses.herokuapp.com/FCT-v1/2-cps-user-journey/E-case-overview)
+- [Global navigation (pwd: eagle)](https://witness-expenses.herokuapp.com/FCT-v1/2-cps-user-journey/E-case-overview)
 - [Victims app (pwd: F1shc@kes)](https://witness-expenses.herokuapp.com/FCT-v1/2-cps-user-journey/E-case-overview) 
-- [Witex Public Beta Prototype (pwd: eagle)](https://witness-expenses.herokuapp.com/) 
+- [Witex public beta prototype (pwd: eagle)](https://witness-expenses.herokuapp.com/) 
+- [Housekeeping full prototype list](https://cpsgovuk.atlassian.net/wiki/spaces/FCT2/pages/4680450073/Full+prototype+list)
 
 
 
