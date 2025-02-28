@@ -63,6 +63,7 @@ app.get('/login', (req, res) => {
 
     </style>
     <div style="margin: 20px 20px">
+    <h1 class="govuk-heading-l">CPS Design Manual</h1>
     <form method="post" action="/login">
       <!-- <input type="text" name="username" placeholder="Username" required>
        <input type="password" name="password" placeholder="Password" required>
@@ -74,6 +75,8 @@ app.get('/login', (req, res) => {
     </label>
   </h1>
   <input class="govuk-input govuk-!-width-one-quarter" id="password" type="password" name="password" type="text" required>
+  </div>
+  <div>
   <button type="submit" class="govuk-button" data-module="govuk-button">
   Continue
 </button>
