@@ -63,6 +63,20 @@ app.get('/login', (req, res) => {
      <!link href="/public/stylesheets/application.css" rel="stylesheet" -->
 
     <style>
+
+    html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 400; /* Try 500 or 600 if too thin */
+     font-stretch: normal;
+     
+}
+
     .govuk-heading-l {
     color: rgb(11, 12, 12);
     font-family:  arial, sans-serif;
