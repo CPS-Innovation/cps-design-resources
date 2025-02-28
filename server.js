@@ -59,22 +59,27 @@ function authMiddleware(req, res, next) {
 // Login Page Route
 app.get('/login', (req, res) => {
   res.send(`
+    <link href="/public/stylesheets/application.css" rel="stylesheet">
+
+    </style>
+    <div style="margin: 20px 20px">
     <form method="post" action="/login">
       <!-- <input type="text" name="username" placeholder="Username" required>
        <input type="password" name="password" placeholder="Password" required>
        <button type="submit">Login</button> -->
     <div class="govuk-form-group">
-      <h1 class="govuk-label-wrapper">
-    <label class="govuk-label govuk-label--m" for="event-name">
+      <h1 class="govuk-label-wrapper" style="">
+    <label class="govuk-label govuk-label--s" for="event-name">
       Enter password
     </label>
   </h1>
-  <input class="govuk-input" id="password" type="password" name="password" type="text" required>
+  <input class="govuk-input govuk-!-width-one-quarter" id="password" type="password" name="password" type="text" required>
   <button type="submit" class="govuk-button" data-module="govuk-button">
   Continue
 </button>
 </div>
     </form>
+    </div>
   `);
 });
 
