@@ -59,11 +59,13 @@ function authMiddleware(req, res, next) {
 // Login Page Route
 app.get('/login', (req, res) => {
   res.send(`
-    <link href="/public/stylesheets/application.css" rel="stylesheet">
 
+     <!link href="/public/stylesheets/application.css" rel="stylesheet" -->
+
+    <style>
     .govuk-heading-l {
     color: rgb(11, 12, 12);
-    font-family: NewTransport, arial, sans-serif;
+    font-family:  arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 700;
            font-size: 2.25rem;
@@ -73,31 +75,30 @@ app.get('/login', (req, res) => {
     margin-bottom: 30px;
 }
 
+
+
+    .govuk-label {
+    font-family:  arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: rgb(11, 12, 12);
+    display: block;
+    margin-bottom: 5px; 
+  }
+
     .govuk-label--s {
-      font-family: NewTransport, arial, sans-serif;
+      font-family:  arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 700;
         font-size: 1.1875rem;
         line-height: 1.31579;
     }
-
-    .govuk-label {
-    font-family: NewTransport, arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.25;
-    color: rgb(11, 12, 12);
-    display: block;
-    margin-bottom: 5px; }
-
-        .govuk-\!-width-one-quarter {
-        width: 25% !important;
-    }
+  
 
 
     .govuk-input {
-    font-family: NewTransport, arial, sans-serif;
+    font-family:  arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
       font-size: 1.1875rem;
@@ -113,10 +114,11 @@ app.get('/login', (req, res) => {
     border-color: rgb(11, 12, 12);
     border-image: initial;
     border-radius: 0px;
+  }
 
 
 .govuk-button {
-    font-family: NewTransport, arial, sans-serif;
+    font-family:  arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
     font-size: 1.1875rem;
@@ -142,12 +144,13 @@ app.get('/login', (req, res) => {
     border-color: transparent;
     border-image: initial;
     border-radius: 0px;
+    max-width:100px;
+    margin-top:30px
 }
+ </style>
 
 
 
-
-    </style>
     <div style="margin: 20px 20px">
     <h1 class="govuk-heading-l">CPS Design Manual</h1>
     <form method="post" action="/login">
@@ -155,12 +158,12 @@ app.get('/login', (req, res) => {
        <input type="password" name="password" placeholder="Password" required>
        <button type="submit">Login</button> -->
     <div class="govuk-form-group">
-      <h1 class="govuk-label-wrapper" style="">
+     
     <label class="govuk-label govuk-label--s" for="event-name">
       Enter password
     </label>
-  </h1>
-  <input class="govuk-input govuk-!-width-one-quarter" id="password" type="password" name="password" type="text" required>
+
+  <input class="govuk-input govuk-!-width-one-quarter" id="password" type="password" name="password" type="text" style=" width: 25% !important;" required>
   </div>
   <div>
   <button type="submit" class="govuk-button" data-module="govuk-button">
