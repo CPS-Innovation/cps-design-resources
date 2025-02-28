@@ -26,13 +26,13 @@ const autoRoutes = require('./app/routes/auto');
 const utils = require('./lib/utils.js');
 
 // Port
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 // Configuration
 const env = process.env.NODE_ENV || 'development';
 const useAuth = process.env.USE_AUTH === 'true';
 const useHttps = process.env.USE_HTTPS === 'true';
-const username = process.env.USERNAME || "design  ";
+// const username = process.env.USERNAME || "design  ";
 const password = process.env.PASSWORD || "eagle";
 const useBrowserSync = process.env.USE_BROWSER_SYNC === 'true';
 
@@ -60,16 +60,28 @@ function authMiddleware(req, res, next) {
 app.get('/login', (req, res) => {
   res.send(`
     <form method="post" action="/login">
-      <input type="text" name="username" placeholder="Username" required>
-      <input type="password" name="password" placeholder="Password" required>
-      <button type="submit">Login</button>
+      <!-- <input type="text" name="username" placeholder="Username" required>
+       <input type="password" name="password" placeholder="Password" required>
+       <button type="submit">Login</button> -->
+    <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--m" for="event-name">
+      Enter password
+    </label>
+  </h1>
+  <input class="govuk-input" id="password" type="password" name="password" type="text" required>
+  <button type="submit" class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+</div>
     </form>
   `);
 });
 
 // Handle Login Submission
 app.post('/login', (req, res) => {
-  if (req.body.username === username && req.body.password === password) {
+  // if (req.body.username === username && req.body.password === password) {
+    if (req.body.password === password) {
     req.session.authenticated = true;
     return res.redirect('/'); // Redirect to home after login
   }
@@ -214,7 +226,7 @@ if (!envExists) {
 }
 
 // Start server
-const PORT = 3000;
+const PORT = 4000;
 const HOST = '0.0.0.0'; // Bind to all interfaces
 
 app.listen(PORT, HOST, () => {
