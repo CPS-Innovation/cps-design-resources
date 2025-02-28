@@ -61,6 +61,92 @@ app.get('/login', (req, res) => {
   res.send(`
     <link href="/public/stylesheets/application.css" rel="stylesheet">
 
+    .govuk-heading-l {
+    color: rgb(11, 12, 12);
+    font-family: NewTransport, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+           font-size: 2.25rem;
+        line-height: 1.11111;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+    .govuk-label--s {
+      font-family: NewTransport, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+        font-size: 1.1875rem;
+        line-height: 1.31579;
+    }
+
+    .govuk-label {
+    font-family: NewTransport, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: rgb(11, 12, 12);
+    display: block;
+    margin-bottom: 5px; }
+
+        .govuk-\!-width-one-quarter {
+        width: 25% !important;
+    }
+
+
+    .govuk-input {
+    font-family: NewTransport, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+      font-size: 1.1875rem;
+        line-height: 1.31579;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 0px;
+    appearance: none;
+    padding: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(11, 12, 12);
+    border-image: initial;
+    border-radius: 0px;
+
+
+.govuk-button {
+    font-family: NewTransport, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 1.1875rem;
+        line-height: 1;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+            margin-bottom: 32px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 112, 60);
+    box-shadow: rgb(0, 45, 24) 0px 2px 0px;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    appearance: none;
+    padding: 8px 10px 7px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 0px;
+}
+
+
+
+
     </style>
     <div style="margin: 20px 20px">
     <h1 class="govuk-heading-l">CPS Design Manual</h1>
