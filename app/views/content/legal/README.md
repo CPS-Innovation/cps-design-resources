@@ -1,0 +1,1 @@
+All language should be as simple to understand as possible, including privacy policies and declarations. Explaining users’ rights and obligations clearly is good legal practice as well as being good for usability.

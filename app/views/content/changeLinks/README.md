@@ -1,0 +1,1 @@
+We follow the GOV.UK style rules around visually hidden text [Summary list – GOV.UK Design System ](https://design-system.service.gov.uk/components/summary-list/)

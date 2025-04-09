@@ -1,0 +1,1 @@
+A <strong>suspect’s</strong> status is changed to <strong>defendant</strong> on the CMS system when charges, a hearing date and a venue are added to a case file.
