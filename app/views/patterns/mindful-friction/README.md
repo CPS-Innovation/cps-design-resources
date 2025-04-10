@@ -72,7 +72,7 @@ To do this, take 1 of your prioritised risks and list out questions for how to p
 💡 Design to avoid alarm fatigue. Only warn users, when meaningful, about specific concerns.
 
 
-<div><img src="/public/images/cps/picture-2.jpg" alt="image of the human oversight journey" style="width:100%;height:auto"></div>
+<div><a href="/public/images/cps/picture-2.jpg" target="_blank"><img src="/public/images/cps/picture-2.jpg" alt="image of the human oversight journey" style="width:100%;height:auto"></a></div>
 
 ### Glossary
 
