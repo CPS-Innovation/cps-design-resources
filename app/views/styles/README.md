@@ -4,7 +4,7 @@ Make your service look and feel like CPS.
 
 We use patterns from existing design systems in this order:
 
-- [CPS Outsystems Style Guide](https://cps-dev.outsystemsenterprise.com/Casework_StyleGuide/Components)
+- [CPS Outsystems Style Guide](https://cps-dev.outsystemsenterprise.com/CPS_GDS_StyleGuide/Home)
 - CPS Design System for design patterns - This pattern library for patterns that are not yet in the Outsystems style guide
 - [GDS Design System](https://design-system.service.gov.uk/)
 - [Ministry of Justice Design System](https://design-patterns.service.justice.gov.uk/)
