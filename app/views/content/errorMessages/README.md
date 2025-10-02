@@ -1,4 +1,4 @@
-Error messaging needs to follow GOV.UK patterns like this [Error summary – GOV.UK Design System ](https://design-system.service.gov.uk/components/error-summary/)  
+ 
 
 ### ‘There is a problem with this service’
 How it works
