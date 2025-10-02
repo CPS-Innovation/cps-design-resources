@@ -20,7 +20,7 @@ If you need to apply styles manually, you should still follow existing CPS conve
 
 
 # Grids
-Use the [GDS grid and layouts](https://design-system.service.gov.uk/styles/layout/) as a foundation, but adjust for a maximum screen width of 1600px (t.b.c).
+Use the [GDS grid and layouts](https://design-system.service.gov.uk/styles/layout/) as a foundation.
 
 
 # Fonts
@@ -47,10 +47,6 @@ Most Common Screen Width: 1400px (t.b.c)
 - the majority of users operate on screens around 1400px wide, which is the optimal design target for layout and spacing.
 - primary navigation, content organization, and interactive elements should be optimized for this width, ensuring an efficient and intuitive user experience.
 
-Maximum Screen Width: 1600px (t.b.c)
-- the main container including gutters has a max width of 1600px
-- the largest expected screen width is 1600px, typically found on high-resolution monitors used in office and home offices.
-- while designs should accommodate this size, layouts should not overly stretch beyond usability
 
 Responsive Considerations
 - the interface should fluidly scale between 1024px and 1600px while maintaining logical content distribution and avoiding excessive whitespace.
