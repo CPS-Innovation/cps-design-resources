@@ -57,7 +57,7 @@ However, be aware that licences are sometimes limited. Typically, the Design lea
 
 ### GitHub and Heroku
 
-<strong class="govuk-tag govuk-tag--light-green">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--light-purple">Design Lead</strong> <strong class="govuk-tag govuk-tag--green">SME</strong>
+<strong class="govuk-tag govuk-tag--light-green">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--light-purple">Design Lead</strong> <strong class="govuk-tag govuk-tag--yellow">SME</strong>
 
 #### What we use it for
 
