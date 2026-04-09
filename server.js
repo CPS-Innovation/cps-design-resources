@@ -1,6 +1,7 @@
 // Core dependencies
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 // NPM dependencies
 const browserSync = require('browser-sync');
@@ -35,6 +36,10 @@ const useHttps = process.env.USE_HTTPS === 'true';
 // const username = process.env.USERNAME || "design  ";
 const password = process.env.PASSWORD || "eagle";
 const useBrowserSync = process.env.USE_BROWSER_SYNC === 'true';
+const authCookieName = 'cps_design_manual_auth';
+const authCookieValue = 'authenticated';
+const authCookieMaxAge = 30 * 24 * 60 * 60 * 1000;
+const authCookieSecret = process.env.AUTH_COOKIE_SECRET || process.env.SESSION_SECRET || 'moj-frontend-secret';
 
 // Application
 const app = express();
@@ -48,13 +53,52 @@ app.use(session({
   saveUninitialized: true,
   cookie: {
     secure: false,
-    maxAge: 30 * 24 * 60 * 60 * 1000
+    maxAge: authCookieMaxAge
   }  // Set `true` if using HTTPS
 }));
+
+function parseCookies(cookieHeader = '') {
+  return cookieHeader
+    .split(';')
+    .map((cookie) => cookie.trim())
+    .filter(Boolean)
+    .reduce((cookies, cookie) => {
+      const separatorIndex = cookie.indexOf('=');
+      if (separatorIndex === -1) {
+        return cookies;
+      }
+
+      const key = cookie.slice(0, separatorIndex);
+      const value = cookie.slice(separatorIndex + 1);
+      cookies[key] = decodeURIComponent(value);
+      return cookies;
+    }, {});
+}
+
+function signAuthCookie(value) {
+  const signature = crypto
+    .createHmac('sha256', authCookieSecret)
+    .update(value)
+    .digest('hex');
+
+  return `${value}.${signature}`;
+}
+
+function hasValidAuthCookie(req) {
+  const cookies = parseCookies(req.headers.cookie);
+  const cookieValue = cookies[authCookieName];
+
+  if (!cookieValue) {
+    return false;
+  }
+
+  return cookieValue === signAuthCookie(authCookieValue);
+}
 
 // Authentication Middleware
 function authMiddleware(req, res, next) {
   if (!useAuth) return next(); // Skip authentication if disabled
+  if (hasValidAuthCookie(req)) return next(); // Allow access if signed auth cookie is present
   if (req.session.authenticated) return next(); // Allow access if logged in
 
   const isGetRequest = req.method === 'GET';
@@ -209,6 +253,13 @@ app.post('/login', (req, res) => {
     const returnTo = req.session.returnTo || '/';
     req.session.authenticated = true;
     delete req.session.returnTo;
+    res.cookie(authCookieName, signAuthCookie(authCookieValue), {
+      httpOnly: true,
+      maxAge: authCookieMaxAge,
+      path: '/',
+      sameSite: 'lax',
+      secure: false
+    });
     return res.redirect(returnTo);
   }
   res.status(401).send("Unauthorized: Invalid credentials");
@@ -217,6 +268,7 @@ app.post('/login', (req, res) => {
 // Logout Route
 app.get('/logout', (req, res) => {
   req.session.destroy(() => {
+    res.clearCookie(authCookieName, { path: '/' });
     res.redirect('/login');
   });
 });
