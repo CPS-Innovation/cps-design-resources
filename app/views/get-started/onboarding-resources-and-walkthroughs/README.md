@@ -4,7 +4,7 @@ To achieve this, they should speak to the relevant colleagues about the followin
 
 ### Programme overview
 
-[Onboarding partner] [Head of UCDA] [Design Lead] [Research Lead] [Feature lead] [SME]
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--grey">Design Lead</strong> <strong class="govuk-tag govuk-tag--grey">Research Lead</strong> <strong class="govuk-tag govuk-tag--grey">Feature lead</strong> <strong class="govuk-tag govuk-tag--grey">SME</strong>
 
 It’s important for new starters to discuss the overall programme with a range of colleagues, as each will offer a slightly different but interconnected point of view.
 
@@ -30,7 +30,7 @@ Remember, the work that CPS does and the processes and systems which facilitate 
 
 ### CPS context
 
-[Head of UCDA] [Design lead] [Research lead] [Feature lead] [Onboarding partner] [SME]
+<strong class="govuk-tag govuk-tag--grey">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--grey">Design Lead</strong> <strong class="govuk-tag govuk-tag--grey">Research Lead</strong> <strong class="govuk-tag govuk-tag--grey">Feature lead</strong> <strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">SME</strong>
 
 New starters are encouraged to watch the collection of short videos which focus on the roles and responsibilities of various CPS roles.
 
@@ -44,7 +44,7 @@ Understanding the core roles, responsibilities, needs and challenges of our user
 
 ### Quarterly planning
 
-[Feature lead] [Head of UCDA] [Design Lead] [Research Lead]
+<strong class="govuk-tag govuk-tag--grey">Feature lead</strong> <strong class="govuk-tag govuk-tag--grey">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--grey">Design Lead</strong> <strong class="govuk-tag govuk-tag--grey">Research Lead</strong>
 
 Quarterly planning is essential for the delivery of our work, setting our overall direction and the interaction between various teams every three months.
 
@@ -52,7 +52,7 @@ The new starter will need to be invited to quarterly planning meetings, and will
 
 ### CPS Design Manual
 
-[Onboarding partner] [Design lead] [Head of UCDA]
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Design Lead</strong> <strong class="govuk-tag govuk-tag--grey">Head of UCDA</strong>
 
 The CPS Design Manual (password: eagle) offers every member of the design team a repository of:
 

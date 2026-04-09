@@ -11,9 +11,11 @@
 
 {% block pageContent %}
 
+  {% include "../onboarding-tag-styles.html" %}
+
   <h1 class="govuk-heading-xl"><span class="govuk-caption-xl">{{ sectionTitle }}</span> {{ pageTitle }}</h1>
 
-  <div class="app-prose-scope">
+  <div class="app-prose-scope app-onboarding-prose">
     {% markdown %}{% include "./README.md" %}{% endmarkdown %}
   </div>
 

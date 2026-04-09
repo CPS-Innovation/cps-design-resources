@@ -5,7 +5,7 @@ The new starter will need access to all of the following.
 
 ### Microsoft Outlook and Teams access
 
-[Onboarding partner] [Feature lead]
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Feature lead</strong>
 
 #### What we use it for
 
@@ -19,7 +19,7 @@ The Onboarding partner should check with them to make sure they can access both 
 
 ### Meeting invitations
 
-[Onboarding partner] [Head of UCDA] [Design Lead] [Research Lead] [Future team lead]
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--grey">Design Lead</strong> <strong class="govuk-tag govuk-tag--grey">Research Lead</strong> <strong class="govuk-tag govuk-tag--grey">Future team lead</strong>
 
 #### What we use them for
 
@@ -43,7 +43,7 @@ It is the new starter’s responsibility to figure out which meetings are vital 
 
 ### Miro
 
-[Onboarding partner] [Design lead]
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Design Lead</strong>
 
 #### What we use it for
 
@@ -57,7 +57,7 @@ However, be aware that licences are sometimes limited. Typically, the Design lea
 
 ### GitHub and Heroku
 
-[Head of UCDA] [Design lead] [SME]
+<strong class="govuk-tag govuk-tag--grey">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--grey">Design Lead</strong> <strong class="govuk-tag govuk-tag--grey">SME</strong>
 
 #### What we use it for
 
@@ -71,7 +71,7 @@ They can request access to both GitHub and Heroku from the Design Lead, who will
 
 ### Figma
 
-[Design lead]
+<strong class="govuk-tag govuk-tag--grey">Design Lead</strong>
 
 #### What we use it for
 
@@ -85,7 +85,7 @@ New starters will need to be invited to CPS Figma by the Design lead.
 
 ### Sharepoint
 
-[Onboarding partner] [Feature lead]
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Feature lead</strong>
 
 #### What we use it for
 
@@ -99,7 +99,7 @@ The Feature lead for each area the new starter is working in will need to invite
 
 ### JIRA and Confluence
 
-[Onboarding partner] [Feature lead]
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Feature lead</strong>
 
 #### What we use it for
 
@@ -113,7 +113,7 @@ The Feature lead for each area the new starter is working in will need to invite
 
 ### Development environments
 
-[Onboarding partner] [Feature lead]
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Feature lead</strong>
 
 #### What we use it for
 

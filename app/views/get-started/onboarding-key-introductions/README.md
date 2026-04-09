@@ -4,7 +4,7 @@ Knowing who you’re working with is an important early step. Read through the r
 
 ### Onboarding partner
 
-[Onboarding partner]
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong>
 
 Every new starter joining the CPS design team should be assigned a dedicated Onboarding partner to give one-to-one support during the welcome process.
 
@@ -26,7 +26,7 @@ They act as the go-to person for friendly advice while the new starter is settli
 
 People in introductory meeting
 
-[Onboarding partner] and new starter
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> and new starter
 
 Priority level for meeting
 
@@ -34,7 +34,7 @@ Highest – in first week
 
 ### Head of User-Centred Design and Analysis
 
-[Head of UCDA]
+<strong class="govuk-tag govuk-tag--grey">Head of UCDA</strong>
 
 #### Their role
 
@@ -51,7 +51,7 @@ Person currently in role: Kate Ivey-Williams - Kate.Ivey-Williams@cps.gov.uk
 
 People in introductory meeting
 
-[Onboarding partner] [Head of UCDA] and new starter
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Head of UCDA</strong> and new starter
 
 Priority level for meeting
 
@@ -59,7 +59,7 @@ High – within two weeks
 
 ### Design Lead
 
-[Design lead]
+<strong class="govuk-tag govuk-tag--grey">Design Lead</strong>
 
 #### Their role
 
@@ -77,13 +77,13 @@ Person currently in role: Rob Jenkins - robert.jenkins@cps.gov.uk
 
 People in introductory meeting
 
-[Onboarding partner] [Design lead] and new starter
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Design Lead</strong> and new starter
 
 Priority level for meeting: High – within two weeks
 
 ### User Research Lead
 
-[Research lead]
+<strong class="govuk-tag govuk-tag--grey">Research Lead</strong>
 
 #### Their role
 
@@ -101,7 +101,7 @@ Person currently in role: Malgorzata (Gosia) Solbecka
 
 People in introductory meeting
 
-[Onboarding partner] [Research lead] and new starter
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Research Lead</strong> and new starter
 
 Priority level for meeting
 
@@ -109,7 +109,7 @@ High – within 2 weeks
 
 ### Feature lead
 
-[Feature lead]
+<strong class="govuk-tag govuk-tag--grey">Feature lead</strong>
 
 #### Their role
 
@@ -121,7 +121,7 @@ This person has an in-depth understanding of their particular service area or pr
 
 People in introductory meeting
 
-[Onboarding partner] [Feature lead] and new starter
+<strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Feature lead</strong> and new starter
 
 Priority level for meeting
 
@@ -129,7 +129,7 @@ High – within 2 weeks
 
 ### Subject matter expert (SME)
 
-[SME]
+<strong class="govuk-tag govuk-tag--grey">SME</strong>
 
 #### Their role
 
