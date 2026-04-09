@@ -53,6 +53,7 @@ app.use(session({
 function authMiddleware(req, res, next) {
   if (!useAuth) return next(); // Skip authentication if disabled
   if (req.session.authenticated) return next(); // Allow access if logged in
+  req.session.returnTo = req.originalUrl;
   res.redirect('/login'); // Redirect to login page
 }
 
@@ -192,9 +193,11 @@ body {
 // Handle Login Submission
 app.post('/login', (req, res) => {
   // if (req.body.username === username && req.body.password === password) {
-    if (req.body.password === password) {
+  if (req.body.password === password) {
+    const returnTo = req.session.returnTo || '/';
     req.session.authenticated = true;
-    return res.redirect('/'); // Redirect to home after login
+    delete req.session.returnTo;
+    return res.redirect(returnTo);
   }
   res.status(401).send("Unauthorized: Invalid credentials");
 });
