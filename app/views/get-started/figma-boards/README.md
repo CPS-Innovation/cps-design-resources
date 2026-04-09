@@ -2,7 +2,7 @@ These are prototypes and Figma boards we are working on as a team:
 
 - [Global navigation ](https://witness-expenses.herokuapp.com/FCT-v1/2-cps-user-journey/E-case-overview)<br />pwd: eagle
 
-#Make a charging decision
+### Make a charging decision
 
 - [Global navigation ](https://witness-expenses.herokuapp.com/FCT-v1/2-cps-user-journey/E-case-overview)<br />pwd: eagle
 - [Prosecute a case (work management)(Adam) ](https://prosecute-a-case-7db096a5cb23.herokuapp.com/)<br />pass: eagle
@@ -10,10 +10,8 @@ These are prototypes and Figma boards we are working on as a team:
 - [DCF Materials (Tom) ](https://dcf-materials-prototype-518dc930c7f5.herokuapp.com/manage-prototype/password?returnURL=%2F)<br />pwd: eagle
 
 
+### Other
 
-
-
-# Other
 - [AI (lydia)](https://cps-ai-prototype-8ce0da3be90f.herokuapp.com/manage-prototype/password?returnURL=%2F)<br />pass: eagle
 - [Victims app ](https://vca-50769fdbeb44.herokuapp.com/manage-prototype/password?error=wrong-password&returnURL=%2F) <br />pwd: 
 - [Witex public beta prototype](https://witness-expenses.herokuapp.com/) <br />pwd: eagle
