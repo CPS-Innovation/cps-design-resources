@@ -4,7 +4,7 @@ To achieve this, they should speak to the relevant colleagues about the followin
 
 ### Programme overview
 
-<strong class="govuk-tag govuk-tag--light-blue">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--light-green">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--light-purple">Design Lead</strong> <strong class="govuk-tag govuk-tag--light-yellow">Research Lead</strong> <strong class="govuk-tag govuk-tag--blue">Feature lead</strong> <strong class="govuk-tag govuk-tag--purple">SME</strong>
+<strong class="govuk-tag govuk-tag--light-blue">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--light-green">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--light-purple">Design Lead</strong> <strong class="govuk-tag govuk-tag--light-yellow">Research Lead</strong> <strong class="govuk-tag govuk-tag--blue">Feature lead</strong> <strong class="govuk-tag govuk-tag--green">SME</strong>
 
 It’s important for new starters to discuss the overall programme with a range of colleagues, as each will offer a slightly different but interconnected point of view.
 
@@ -30,7 +30,7 @@ Remember, the work that CPS does and the processes and systems which facilitate 
 
 ### CPS context
 
-<strong class="govuk-tag govuk-tag--light-green">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--light-purple">Design Lead</strong> <strong class="govuk-tag govuk-tag--light-yellow">Research Lead</strong> <strong class="govuk-tag govuk-tag--blue">Feature lead</strong> <strong class="govuk-tag govuk-tag--light-blue">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--purple">SME</strong>
+<strong class="govuk-tag govuk-tag--light-green">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--light-purple">Design Lead</strong> <strong class="govuk-tag govuk-tag--light-yellow">Research Lead</strong> <strong class="govuk-tag govuk-tag--blue">Feature lead</strong> <strong class="govuk-tag govuk-tag--light-blue">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--green">SME</strong>
 
 New starters are encouraged to watch the collection of short videos which focus on the roles and responsibilities of various CPS roles.
 

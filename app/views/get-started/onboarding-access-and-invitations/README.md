@@ -19,7 +19,7 @@ The Onboarding partner should check with them to make sure they can access both 
 
 ### Meeting invitations
 
-<strong class="govuk-tag govuk-tag--light-blue">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--light-green">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--light-purple">Design Lead</strong> <strong class="govuk-tag govuk-tag--light-yellow">Research Lead</strong> <strong class="govuk-tag govuk-tag--blue">Future team lead</strong>
+<strong class="govuk-tag govuk-tag--light-blue">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--light-green">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--light-purple">Design Lead</strong> <strong class="govuk-tag govuk-tag--light-yellow">Research Lead</strong> <strong class="govuk-tag govuk-tag--grey">Future team lead</strong>
 
 #### What we use them for
 
@@ -57,7 +57,7 @@ However, be aware that licences are sometimes limited. Typically, the Design lea
 
 ### GitHub and Heroku
 
-<strong class="govuk-tag govuk-tag--light-green">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--light-purple">Design Lead</strong> <strong class="govuk-tag govuk-tag--purple">SME</strong>
+<strong class="govuk-tag govuk-tag--light-green">Head of UCDA</strong> <strong class="govuk-tag govuk-tag--light-purple">Design Lead</strong> <strong class="govuk-tag govuk-tag--green">SME</strong>
 
 #### What we use it for
 

@@ -129,7 +129,7 @@ High – within 2 weeks
 
 ### Subject matter expert (SME)
 
-<strong class="govuk-tag govuk-tag--purple">SME</strong>
+<strong class="govuk-tag govuk-tag--green">SME</strong>
 
 #### Their role
 
