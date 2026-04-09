@@ -1,7 +1,3 @@
-Getting started with the design team
-
-Understand the programme with walkthroughs
-
 Beyond getting set up, it’s vital that new starters get to grips with the work being done.
 
 To achieve this, they should speak to the relevant colleagues about the following subjects and areas.

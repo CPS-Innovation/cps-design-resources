@@ -1,7 +1,3 @@
-Getting started with the design team
-
-Overview
-
 How to get new team members started at CPS – including self-service.
 
 ### Why onboarding matters

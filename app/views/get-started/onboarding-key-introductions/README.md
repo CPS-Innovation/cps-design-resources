@@ -1,7 +1,3 @@
-Getting started with the design team
-
-Meet key people
-
 Who new starters need to meet during the onboarding process.
 
 Knowing who you’re working with is an important early step. Read through the roles on this page to understand the key people involved, and how they’ll be involved in welcoming a new starter.

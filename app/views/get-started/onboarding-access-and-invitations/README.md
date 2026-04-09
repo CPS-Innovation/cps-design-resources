@@ -1,6 +1,3 @@
-Getting started with the design team
-
-Set up platforms and invitations
 
 We use a wide range of tools and platforms to realise our design and research work.
 
