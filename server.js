@@ -46,7 +46,10 @@ app.use(session({
   secret: process.env.SESSION_SECRET || 'moj-frontend-secret',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: false }  // Set `true` if using HTTPS
+  cookie: {
+    secure: false,
+    maxAge: 30 * 24 * 60 * 60 * 1000
+  }  // Set `true` if using HTTPS
 }));
 
 // Authentication Middleware
