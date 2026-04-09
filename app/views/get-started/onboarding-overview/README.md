@@ -16,7 +16,7 @@ Having a supported and comprehensive introduction will:
 
 This guide can be used by anyone involved in the onboarding process, including the new starter as a resource to increase their understanding.
 
-Check the tags in each section to understand the key people involved and responsible. For example, <strong class="govuk-tag govuk-tag--grey">Onboarding partner</strong>.
+Check the tags in each section to understand the key people involved and responsible. For example, <strong class="govuk-tag govuk-tag--light-blue">Onboarding partner</strong>.
 
 ### Three steps to get started
 
