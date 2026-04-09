@@ -53,7 +53,16 @@ app.use(session({
 function authMiddleware(req, res, next) {
   if (!useAuth) return next(); // Skip authentication if disabled
   if (req.session.authenticated) return next(); // Allow access if logged in
-  req.session.returnTo = req.originalUrl;
+
+  const isGetRequest = req.method === 'GET';
+  const isLoginRoute = req.path === '/login';
+  const isFaviconRequest = req.path === '/favicon.ico';
+  const isStaticAssetRequest = /\.(css|js|png|jpg|jpeg|gif|svg|ico|webp|woff|woff2|ttf|eot|map)$/i.test(req.path);
+
+  if (isGetRequest && !isLoginRoute && !isFaviconRequest && !isStaticAssetRequest) {
+    req.session.returnTo = req.originalUrl;
+  }
+
   res.redirect('/login'); // Redirect to login page
 }
 
