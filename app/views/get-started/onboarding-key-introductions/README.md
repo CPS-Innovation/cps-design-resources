@@ -109,7 +109,7 @@ High – within 2 weeks
 
 ### Feature lead
 
-<strong class="govuk-tag govuk-tag--grey">Feature lead</strong>
+<strong class="govuk-tag govuk-tag--blue">Feature lead</strong>
 
 #### Their role
 
@@ -121,7 +121,7 @@ This person has an in-depth understanding of their particular service area or pr
 
 People in introductory meeting
 
-<strong class="govuk-tag govuk-tag--light-blue">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--grey">Feature lead</strong> and new starter
+<strong class="govuk-tag govuk-tag--light-blue">Onboarding partner</strong> <strong class="govuk-tag govuk-tag--blue">Feature lead</strong> and new starter
 
 Priority level for meeting
 
@@ -129,7 +129,7 @@ High – within 2 weeks
 
 ### Subject matter expert (SME)
 
-<strong class="govuk-tag govuk-tag--grey">SME</strong>
+<strong class="govuk-tag govuk-tag--purple">SME</strong>
 
 #### Their role
 
