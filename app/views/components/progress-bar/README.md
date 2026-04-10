@@ -23,7 +23,3 @@ The user can navigate through the transaction in any order, moving back and fort
 
 This component is used in:
 - Case review
-
-## Accessibility criteria
-
-t.b.c

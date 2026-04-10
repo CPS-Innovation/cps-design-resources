@@ -22,6 +22,4 @@ Do not use this component if text formatting is unnecessary. Instead, use the st
 This component is currently used in:  
 - Case progression  
 
-## Accessibility criteria  
-
-TBC  
+## Accessibility criteria

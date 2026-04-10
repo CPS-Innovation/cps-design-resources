@@ -19,6 +19,4 @@ Only use this pattern if usability testing indicates that the standard GDS "Chec
 This pattern is currently used in:  
 - Housekeeping  
 
-## Accessibility criteria  
-
-TBC  
+## Accessibility criteria

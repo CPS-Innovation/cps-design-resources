@@ -25,7 +25,3 @@ This component is used in:
 - Case review
 - Housekeeping
 - DCF
-
-## Accessibility criteria
-
-t.b.c

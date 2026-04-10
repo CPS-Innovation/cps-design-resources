@@ -51,7 +51,3 @@ The form should also send additional data automatically like:
 
 A variant of this component is currently used in:
 - witness expenses 
-
-## Accessibility
-
-Criteria t.b.c

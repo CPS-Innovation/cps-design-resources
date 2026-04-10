@@ -29,6 +29,4 @@ This pattern is currently used in:
 - Work management  
 - DCF
 
-## Accessibility criteria  
-
-t.b.c  
+## Accessibility criteria

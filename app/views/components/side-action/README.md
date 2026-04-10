@@ -21,7 +21,3 @@ This component is used in:
 - Casework app
 - DCF
 - Legacy outsystems apps
-
-## Accessibility criteria
-
-t.b.c

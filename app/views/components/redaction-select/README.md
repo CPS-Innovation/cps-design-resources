@@ -9,10 +9,6 @@
 Use this component when you need to select text to perform an action on it, such as redaction.
 
 
-## When not to use this component
-
-t.b.c
-
 ## How it works
 
 The user can select text with a mouse or keyboard using the cursor, when the keyboard or mouse has been released the text is selected and the action box appears.
@@ -25,5 +21,4 @@ This component is used in:
 
 ## Accessibility criteria
 
-t.b.c
 - Talk to casework app team about how they made this work with keyboard and accessible.

@@ -38,7 +38,3 @@ Clicking the exit screen button:
 
 A variant of this component is currently used in:
 - casework app 
-
-## Accessibility
-
-Criteria t.b.c

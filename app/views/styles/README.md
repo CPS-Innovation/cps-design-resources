@@ -36,14 +36,13 @@ Ask the design lead for a copy of the fonts for your prototype. For Figma contin
 
 
 # Screen size
-T.B.C
 
-Minimum Screen Width: 1024px (t.b.c)
+Minimum Screen Width: 1024px
 - the smallest supported screen size is 1024px, ensuring usability on lower-resolution or compact displays, scaled screens or small external monitors.
 - at this width, interfaces should remain fully functional, avoiding horizontal scrolling while maintaining readability and accessibility.
 - navigation should use the [priority pattern](https://jayfreestone.github.io/priority-plus/) to show as many navigation options as possible
 
-Most Common Screen Width: 1400px (t.b.c) 
+Most Common Screen Width: 1400px
 - the majority of users operate on screens around 1400px wide, which is the optimal design target for layout and spacing.
 - primary navigation, content organization, and interactive elements should be optimized for this width, ensuring an efficient and intuitive user experience.
 

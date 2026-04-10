@@ -34,4 +34,3 @@ A variant of this component is currently used in:
 ## Accessibility
 
 The component must have corresponding ARIA tags for assistive technology
-- additional criteria t.b.c
