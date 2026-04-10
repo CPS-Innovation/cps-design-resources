@@ -27,7 +27,14 @@ Use the [GDS grid and layouts](https://design-system.service.gov.uk/styles/layou
 
 CPS has licenced the font [NewTransport](http://www.newtransport.co.uk/). It is the font that the GDS Transport font is based on. It is very similar to the original GDS font, when used it tends to take up slightly more horizontal space than the GDS font but is close enough that it is hard to distinguish between the two.
 
-Ask the design lead for a copy of the fonts for your prototype. For Figma continue to use the GDS Transport font for now.
+Download the CPS web fonts for your prototype:
+
+- [NewTransport CPS Regular (.woff2)](/public/fonts/NewTransportCPS/NewTransportCPS-Regular.woff2)
+- [NewTransport CPS Regular (.woff)](/public/fonts/NewTransportCPS/NewTransportCPS-Regular.woff)
+- [NewTransport CPS Bold (.woff2)](/public/fonts/NewTransportCPS/NewTransportCPS-Bold.woff2)
+- [NewTransport CPS Bold (.woff)](/public/fonts/NewTransportCPS/NewTransportCPS-Bold.woff)
+
+For Figma, continue to use the GDS Transport font for now.
 
 # Type scale
 
