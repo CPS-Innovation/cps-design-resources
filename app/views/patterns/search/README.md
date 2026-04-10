@@ -28,5 +28,3 @@ This pattern is currently used in:
 - Casework app
 - Work management  
 - DCF
-
-## Accessibility criteria

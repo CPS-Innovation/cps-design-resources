@@ -8,6 +8,10 @@
 
 Use this component when you need to select text to perform an action on it, such as redaction.
 
+## When not to use this component
+
+Do not use this component when users only need to select text without taking an action on it.
+
 
 ## How it works
 
@@ -21,4 +25,4 @@ This component is used in:
 
 ## Accessibility criteria
 
-- Talk to casework app team about how they made this work with keyboard and accessible.
+- Check keyboard access and focus behaviour with the casework app team.
