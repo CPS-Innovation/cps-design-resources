@@ -25,7 +25,7 @@ Use the [GDS grid and layouts](https://design-system.service.gov.uk/styles/layou
 
 # Fonts
 
-CPS has licenced the font [NewTransport](http://www.newtransport.co.uk/). It is the font that the GDS Transport font is based on. It is very similar to the original GDS font, when used it tends to take up slightly more horizontal space than the GDS font but is close enough that it is hard to distinguish between the two.
+CPS has licenced the font [NewTransport](https://a2-type.co.uk/new-transport). It is the font that the GDS Transport font is based on. It is very similar to the original GDS font, when used it tends to take up slightly more horizontal space than the GDS font but is close enough that it is hard to distinguish between the two.
 
 Download the CPS web fonts for your prototype:
 
